@@ -36,7 +36,7 @@ int main()
 	Mat dst;
 	////////////////////////////////////Á·Ï°2 +Ë¼¿¼
 	double angle = -10.0;
-	double scale = 1 + 10*sin(angle/(180*Pi));
+	double scale = 1/(cos(angle*Pi / 180) - sin(angle*Pi/180));
 	Point2f center(srcMat.cols*0.5, srcMat.rows*0.5);
 
 	Mat M;
